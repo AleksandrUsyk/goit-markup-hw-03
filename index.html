@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Шапка сайта  -->
     <header class="header">
-        <nav class="nav">
+        <div class="container header-container">
             <a class="logo link" href="./index.html">Web<span class="logo-primary">Studio</span></a>
+        <nav class="nav"></nav>
             <ul class="nav-list list">
                 <li class="nav-item">
                     <a class="nav-link link" href="./index.html">Студия</a></li>
@@ -24,22 +26,28 @@
                     <a class="nav-link link" href="">Контакты</a></li>
             </ul>
         </nav >
+            <div class="header-wrapper">
             <ul class="header-list list">
                 <li class="header-item">
                     <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="header-item">
                     <a class="header-phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>  
+            </ul>
+            </div>
+        </div>  
     </header>
     <main>
         <!-- Секция герой -->
-        <section class="hero">
+        <section class="hero hero-container">
+            <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button">Заказать услугу</button>
+            </div>
         </section>
         <!-- Секция особенности -->
-        <section class="features">
-            <h2>Особенности</h2>
+        <section class="features section">
+            <div class="container">
+            <h2 class="visually-hidden">Особенности</h2>
             <ul class="features-list list">
                 <li class="features-item">
                     <h3 class="features-title">Внимание к деталям</h3>
@@ -58,9 +66,11 @@
                     <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- Секция чем мы занимаемся -->
-        <section class="examples">
+        <section class="examples section">
+            <div class="container">
             <h2 class="examples-title">Чем мы занимаемся</h2>
             <ul class="examples-list list">
                 <li class="examples-item">
@@ -73,36 +83,48 @@
                     <img class="examples-image" src="./images/examples/box3.jpg" alt="Планшет в руках" width="370" height="294">
                 </li>
             </ul>
+            </div>
         </section>
         <!-- Секция наша команда -->
-        <section class="team">
+        <section class="team section">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-item">
                     <img class="team-image" src="./images/photo/photo1.jpg" alt="Фото Игоря" width="270" height="260">
+                    <div class="team-wrapper">
                     <h3 class="team-subtitle">Игорь Демьяненко</h3>
                     <p class="team-text" lang="en">Product Designer</p>
+                    </div>
                 </li>
                 <li class="team-item">
                     <img class="team-image" src="./images/photo/photo2.jpg" alt="Фото Ольги" width="270" height="260">
+                    <div class="team-wrapper">
                     <h3 class="team-subtitle">Ольга Репина</h3>
                     <p class="team-text" lang="en">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="team-item">
                     <img class="team-image" src="./images/photo/photo3.jpg" alt="Фото Николая" width="270" height="260">
+                    <div class="team-wrapper">
                     <h3 class="team-subtitle">Николай Тарасов</h3>
                     <p class="team-text" lang="en">Marketing</p>
+                    </div>
                 </li>
                 <li class="team-item">
                     <img class="team-image" src="./images/photo/photo4.jpg" alt="Фото Михаила" width="270" height="260">
+                    <div class="team-wrapper">
                     <h3 class="team-subtitle">Михаил Ермаков</h3>
                     <p class="team-text" lang="en">UI Designer</p>
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
+        <div class="container">
         <a class="logo link" href="./index.html">Web<span class="logo-secondary">Studio</span></a>
         <address class="address">
         <ul class="address-list list">
@@ -113,6 +135,7 @@
             <li class="address-item">
                 <a class="address-phone link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
+        </div>
         </address>
     </footer>
 </body>

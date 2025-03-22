@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   padding-left: 15px;
@@ -140,11 +144,12 @@ a {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #fff;
-  min-width: 159px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   margin: 0 auto;
   padding: 16px 32px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -162,16 +167,16 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .benefits-list {
@@ -284,9 +289,7 @@ a {
 }
 
 .portfolio-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
